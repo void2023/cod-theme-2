@@ -1,18 +1,19 @@
+{% assign id = 100 | rand: 2000 %}
+
 {{ 'product.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  .product_customization {
+  #product-column-{{ id }} {
     padding-top: {{ section.settings.padding_top}}px;
     padding-bottom: {{ section.settings.padding_bottom}}px;
   }
 
   .countdown-wrapper {
-    background-color: {{ block.settings.background_color.hex }};
     color: {{ block.settings.text_color.hex }};
   }
 {%- endstyle -%}
 
-<section class='product_customization'>
+<div class='product-column' id="product-column-{{ id }}">
   {%- assign selected_product = section.settings.product %}
 
   {%- if product %}
@@ -22,7 +23,7 @@
   {%- if selected_product %}
     {%- render 'single-product', product: selected_product, section: section -%}
   {%- endif %}
-</section>
+</div>
 
 {%- schema -%}
 {
@@ -88,13 +89,13 @@
           "type": "color",
           "id": "background_color",
           "label": "Background color",
-          "default": "#000000"
+          "default": "#ffffff"
         },
         {
           "type": "color",
           "id": "text_color",
           "label": "Text color",
-          "default": "#FFFFFF"
+          "default": "#3c415f"
         },
         {
           "label": "Year",
@@ -143,13 +144,19 @@
           "label": "Background Color",
           "id": "background_color",
           "type": "color",
-          "default": "#ff7420"
+          "default": "#ffffff"
+        },
+        {
+          "label": "Border Color",
+          "id": "border_color",
+          "type": "color",
+          "default": "#3C415F"
         },
         {
           "label": "Text Color",
           "id": "text_color",
           "type": "color",
-          "default": "#ffffff"
+          "default": "#3C415F"
         }
       ]
     },

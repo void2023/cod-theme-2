@@ -12,18 +12,17 @@
   }
 }
 .yc-single-product .product-images {
-  width: calc(100% + 24px);
+  width: 100%;
   margin: 0 -12px;
 }
 @media (min-width: 768px) {
   .yc-single-product .product-images {
     position: sticky;
     top: calc(var(--yc-nav-height) + 20px);
-    width: 100%;
     margin: unset;
   }
 }
-.yc-single-product .product-images .main-image {
+.yc-single-product .product-images .main-thumbnail {
   width: auto;
   height: 100%;
   margin: 0 auto;
@@ -61,20 +60,17 @@
   z-index: 99;
   display: block;
   transition: opacity 0.2s;
-  background-size: 112%;
+  background-size: 102%;
 }
 .yc-single-product .product-images .product-images-container {
   display: flex;
-  flex-direction: row;
-}
-@media (min-width: 768px) {
-  .yc-single-product .product-images .product-images-container {
-    flex-direction: column;
-    gap: 20px;
-  }
+  flex-direction: column;
+  gap: 20px;
 }
 .yc-single-product .product-images .product-images-container .thumbnail-images {
   display: flex;
+  gap: 18px;
+  overflow-y: auto;
   flex-direction: column;
 }
 @media (min-width: 768px) {
@@ -157,17 +153,14 @@
 }
 .yc-single-product .product-images .product-images-container .thumbnail-images img {
   display: block;
-  margin: 0 auto;
-  width: 100%;
+  width: 90px;
+  height: 90px;
   border-radius: 4px;
-  height: 150px;
-  object-fit: contain;
+  object-fit: cover;
+  cursor: pointer;
 }
-@media screen and (max-width: 768px) {
-  .yc-single-product .product-images .product-images-container .thumbnail-images img {
-    max-height: 100%;
-    min-height: 100%;
-  }
+.yc-single-product .product-images .product-images-container .thumbnail-images img.active {
+  border: 1px solid #3C415F;
 }
 .yc-single-product .product-details {
   width: 100%;
@@ -263,10 +256,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 151px;
-  border: 1px solid #BDBDBD;
+  width: 181px;
   border-radius: 4px;
   padding: 5px;
+  gap: 15px;
   /* Hide input arrows in Chrome, Safari, Edge, Opera */
   /* Hide input arrows in Firefox */
 }
@@ -279,11 +272,13 @@
   -moz-appearance: textfield;
 }
 .quantity-field .quantity-input {
-  width: 50%;
+  width: 58px;
   text-align: center;
   border: none;
+  border: 1px solid #E6E6E6;
+  border-radius: 5px;
   padding: 0 !important;
-  font-weight: 700 !important;
+  font-weight: 300 !important;
   font-size: 20px !important;
   line-height: 120% !important;
   color: black;
@@ -293,14 +288,15 @@
 }
 .quantity-field .decrement-button,
 .quantity-field .increment-button {
-  width: 25%;
-  height: 100%;
+  width: 37px;
+  height: 37px;
   border: none;
-  color: #BDBDBD;
-  font-weight: 700;
-  font-size: 29px;
+  color: black;
+  font-weight: 200;
+  background-color: #F3F3F3;
+  border-radius: 5px;
+  font-size: 18px;
   line-height: 120%;
-  background: none;
   cursor: pointer;
   transition: all 200ms ease-in-out;
 }

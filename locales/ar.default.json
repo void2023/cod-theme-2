@@ -1,6 +1,7 @@
 {
   "general":{
-    "show_more_button": "عرض المزيد"
+    "show_more_button": "عرض المزيد",
+    "buy_now": "اشتري الأن"
   },
   "navbar": {
     "search": {
@@ -17,15 +18,17 @@
     "title": "مجموعات مميزة"
   },
   "list_collections": {
-    "title": "مجموعات"
+    "title": "مجموعات",
+    "category-show": "عرض المزيد"
   },
   "cart": {
-    "title": "عربة التسوق",
-    "items_count": "منتجات",
+    "title": "حقيبة التسوق",
+    "items_count": "منتجات في عربة التسوق الخاصة بك",
     "items": {
       "quantity": "الكمية",
-      "total": "المجموع",
-      "remove_cta": "إزالة"
+      "total": "الثمن",
+      "remove_cta": "إزالة",
+      "product": "اسم المنتوج"
     },
     "summary": {
       "title": "ملخص الطلب",
@@ -46,7 +49,8 @@
     "title": "شكرا",
     "subtitle": "تم استلام طلبك.",
     "description": "سيتصل بك فريقنا لتأكيد طلبك",
-    "return_cta": "الصفحة الرئيسية ",
+    "return_cta": "استمر في التسوق",
+    "order_summary": "ملخص الفاتورة",
     "details": {
       "title": "ملخص الفاتورة",
       "payment_status": "حالة الدفع",
@@ -85,6 +89,12 @@
       "created_at_desc": "الأقدم",
       "title_asc": "الأبجدية: من الأقل إلى الأعلى",
       "title_desc": "الأبجدية: من الأعلى إلى الأقل"
+    },
+    "countdown": {
+      "day": "يوم",
+      "hour": "ساعة",
+      "minute": "دقيقة",
+      "second": "ثانية"
     }
   },
   "footer": {

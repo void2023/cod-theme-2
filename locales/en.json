@@ -1,4 +1,7 @@
 {
+  "general": {
+    "buy_now": "Buy now"
+  },
   "navbar": {
     "search": {
       "placeholder": "Enter keyword to search for..."
@@ -11,7 +14,8 @@
     "title": "Featured Collections"
   },
   "list_collections": {
-    "title": "Collections"
+    "title": "Collections",
+    "category-show": "Show more"
   },
   "cart": {
     "title": "Shopping Cart",
@@ -19,7 +23,8 @@
     "items": {
       "quantity": "Quantity",
       "total": "Total",
-      "remove_cta": "Remove"
+      "remove_cta": "Remove",
+      "product": "Product Name"
     },
     "summary": {
       "title": "Order Summary",
@@ -41,6 +46,7 @@
     "subtitle": "Your order has been received.",
     "description": "Our team will be in touch to confirm your request.<br/>We value your trust and appreciate your willingness to communicate with us.<br/>We are always here to serve you.",
     "return_cta": "Return to shop",
+    "order_summary": "Order Summary",
     "details": {
       "title": "Order details",
       "payment_status": "Payment Status",
@@ -85,6 +91,12 @@
       "created_at_desc": "Oldest",
       "title_asc": "Alphabetically: A-Z",
       "title_desc": "Alphabetically: Z-A"
+    },
+    "countdown": {
+      "day": "Day",
+      "hour": "Hour",
+      "minute": "Minute",
+      "second": "Second"
     }
   },
   "footer": {
